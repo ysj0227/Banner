@@ -5,7 +5,9 @@ import java.util.List;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.View;
 import android.view.Window;
+import android.widget.Toast;
 
 public class MainActivity extends Activity {
 
@@ -20,6 +22,7 @@ public class MainActivity extends Activity {
 		viewpager=(BannerViewPager<BannerBaseData>) findViewById(R.id.viewpager);
 		viewpager.setBannerDotLayout(findViewById(R.id.banner_dot));
 		viewpager.setBannerData(getBannerAd(),null);
+
 	}
 
 	private  List<BannerBaseData> getBannerAd() {
@@ -35,13 +38,13 @@ public class MainActivity extends Activity {
 		data.add(object);
 		object=new BannerBaseData();
 		object.setImage("http://img.61gequ.com/allimg/2011-4/201142614314278502.jpg");
-		data.add(object); 
+		data.add(object);
 		object=new BannerBaseData();
 		object.setImage("http://pic.nipic.com/2008-06-02/200862134922819_2.jpg");
         data.add(object);
-    	object=new BannerBaseData();
-		object.setImage("http://pic30.nipic.com/20130618/11860366_201437262000_2.jpg");
-        data.add(object);
+//    	object=new BannerBaseData();
+//		object.setImage("http://pic30.nipic.com/20130618/11860366_201437262000_2.jpg");
+//        data.add(object);
 		return data;
 	}
 
