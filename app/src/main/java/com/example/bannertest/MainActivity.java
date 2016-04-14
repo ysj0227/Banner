@@ -23,6 +23,8 @@ public class MainActivity extends Activity {
 		viewpager.setBannerDotLayout(findViewById(R.id.banner_dot));
 		viewpager.setBannerData(getBannerAd(),null);
 
+		Toast.makeText(MainActivity.this, "aaa", Toast.LENGTH_SHORT).show();
+
 	}
 
 	private  List<BannerBaseData> getBannerAd() {
