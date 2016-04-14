@@ -24,6 +24,7 @@ public class MainActivity extends Activity {
 		viewpager.setBannerData(getBannerAd(),null);
 
 		Toast.makeText(MainActivity.this, "aaa", Toast.LENGTH_SHORT).show();
+		Toast.makeText(MainActivity.this, "bbb", Toast.LENGTH_SHORT).show();
 
 	}
 

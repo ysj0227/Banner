@@ -22,6 +22,7 @@ public class BannerAdapter extends PagerAdapter {
                          OnClickListener onClickListener) {
         this.mImageViews = mImageViews;
         mOnClickListener = onClickListener;
+
     }
 
     @Override
